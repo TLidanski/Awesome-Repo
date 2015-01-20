@@ -8,6 +8,11 @@
 int main(int argc, char *argv[]) {
 	char buff[200];
 	int fd;
+	int lines = 0;
+	int words = 0;
+	int characters = 0;
+	int i;
+	char c;
 	for (i=0;i<argc;i++){
 	fd = open("argv[i]", O_RDONLY);
 	}
@@ -25,11 +30,19 @@ int main(int argc, char *argv[]) {
 			return 1;
 		}
 		
-	if(buff[i]=='\n')
-    line++;
-	 
+	for (buff[i] = 0; i < 200; i++)	 {
+		characters++;
+		if(c == ' ')
+            words++;
+        if(c == '\n') {
+            lines++;
+        }
 	 
 	 }
-	 
+	 }
+	 if(close(fd) == -1) {
+		perror("close");
+		return 1;
+	}
 	 return 0;
 	 }
