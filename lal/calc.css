@@ -1,0 +1,48 @@
+/*RESULTS PAGE CSS*/
+
+table, th, td {
+    border: 1px solid black;
+	border-radius: 10px;
+}
+th,td {
+    padding: 15px;
+	font-family: Arial
+}
+th {
+    text-align: left;
+	background-color: E8E8E8;
+}
+
+caption {
+	font-family: Arial
+	
+}
+/*MAIN PAGE CSS*/
+.header {
+	background-color: white;
+}
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+#link {
+	float: right;
+	padding: 10px 30px;
+	font-family: Arial
+}
+
+.container-top {
+	margin: 50px;
+	padding-top : 100px;
+	background-image: url("images/images.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.top {
+	text-align: center;
+	font-weight: bold; 
+}
+
+.bottom {
+	text-align: center;
+}
